@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgt@300;400;500;600&display=swap');
+ :root {
+    --main-color: #027581;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.main-content {
+    position: relative;
+    transition: margin-left 500ms;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 60px;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    transition: left 500ms;
+}
+
+header h1 {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: rgb(16, 58, 241);
+}
+
+.social-icons li {
+    display: inline-block;
+    justify-content: space-between;
+    padding-right: 4rem;
+}
+
+.social-icons li a {
+    color: #8390A2;
+    font-size: 1.2rem;
+}
+
+.social-icons li a:hover {
+    background: rgb(156, 151, 151);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    transition: 1s;
+}
+
+.social-icons li a.active {
+    color: rgb(238, 98, 98);
+    font-weight: 6rem;
+}
+
+main {
+    margin-top: 60px;
+    background: #f1f5f9;
+    min-height: 90vh;
+    padding: .7rem 3rem;
+}
+
+.dash-cards {
+    display: grid;
+    width: 100%;
+}
+
+.card-single {
+    margin: 40px 30px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-body span {
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1.4rem;
+}
+
+.card-body h5 {
+    color: var(--text-grey);
+    font-size: 1rem;
+}
+
+.activity-card {
+    background: #fff;
+    border-radius: 7px;
+}
+
+.activity-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.activity-card thead {
+    background: #efefef;
+    text-align: left;
+    justify-content: space-between;
+}
+
+th,
+td {
+    font-size: .9rem;
+    padding: 1rem .1rem;
+    color: var(--text-grey);
+}
+
+.field-error {
+    width: 100%;
+    height: 30px;
+    background: black;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+td {
+    font-size: .8rem;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+.frm {
+    margin: 1rem;
+}
+
+.frm label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-grey);
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem 1rem;
+    font-size: 1rem;
+    line-height: 2;
+    outline: none;
+    margin: .8rem auto;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.form-control:hover,
+textarea:hover {
+    box-shadow: 1px 5px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(213, 231, 231);
+    outline: none;
+}
+
+.text-center {
+    margin: 1rem;
+    text-align: center;
+}
+
+.text-center button {
+    background: #17a2b8;
+    color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    padding: .6rem 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
